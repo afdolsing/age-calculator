@@ -1,0 +1,27 @@
+body{
+    background: #74b9ff;
+}
+
+.calculate {
+    width: 20%;
+    height: 50px;
+	background-color: #333;
+	color: white;
+	font-size: 18pt;
+	border-radius: 15px;
+}
+
+form select {
+	background-color: #636e72;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+}
+form option {
+	background-color: #333;
+	color: white;
+}
+
+#result{
+    font-size: 20px;
+}
