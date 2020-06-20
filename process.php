@@ -7,9 +7,7 @@ if(isset($_POST['submit'])){
 
     // dob = date of birth
     $dob = $day.'-'.$month.'-'.$year;
-
     $b_day = new DateTime($dob);
-
     $age = $b_day->diff(new DateTime);
 
     $today = date('d-m-Y');

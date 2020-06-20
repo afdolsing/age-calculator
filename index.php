@@ -14,9 +14,9 @@
         <form method="post">
             <select name="day">
                 <?php 
-                for($i=1; $i<=31; $i++):
-                    echo "<option value=".$i.">".$i."</option>";
-                endfor;
+                    for($i=1; $i<=31; $i++):
+                        echo "<option value=".$i.">".$i."</option>";
+                    endfor;
                 ?>  
             </select>
             </select>
@@ -37,16 +37,16 @@
             </select>
             <select name="year">
                 <?php 
-                for($i=1960; $i<=2020; $i++):
-                    echo "<option value=".$i.">".$i."</option>";
-                endfor;
+                    for($i=1960; $i<=2020; $i++):
+                        echo "<option value=".$i.">".$i."</option>";
+                    endfor;
                 ?>  
             </select>
             <br><br>
             <button type="submit" name="submit" class="calculate">Calculate My Age!</button>
             <div id="result">
             <!-- tamplikan hasil dari proses  -->
-                <p><?php require"process.php"; ?></p>
+                <p><?php include("process.php") ?></p>
             </div>
         </form>
     </div>
