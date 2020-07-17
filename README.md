@@ -1,2 +1,2 @@
 # preview
-![age calcu](https://user-images.githubusercontent.com/51188767/85034762-99bccd00-b1ac-11ea-8714-1f566e211fca.PNG)
+![age calcu](https://user-images.githubusercontent.com/51188767/87799594-9f730480-c877-11ea-9a56-205a635cc1d5.PNG)
