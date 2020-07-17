@@ -1,14 +1,15 @@
 <?php
 
-if(isset($_POST['submit'])){
+if(isset($_POST['save'])){
     $day = $_POST['day'];
     $month = $_POST['month'];
     $year = $_POST['year'];
 
     // dob = date of birth
-    $dob = $day.'-'.$month.'-'.$year;
-    $b_day = new DateTime($dob);
-    $age = $b_day->diff(new DateTime);
+    $dob = $day . '-' . $month . '-' . $year;
+    $today = new DateTime($dob); // waktu sekarang
+    // selisih waktu
+    $age = $today->diff(new DateTime);
 
     $today = date('d-m-Y');
     echo "<br/>";
@@ -16,10 +17,7 @@ if(isset($_POST['submit'])){
     echo $dob;
     echo "<br/>";
     echo "<b>Your Age : </b>";
-    echo $age->y;
-    echo ' years, ';
-    echo $age->m;
-    echo ' months, ';
-    echo $age->d;
-    echo ' days';
+    echo $age->y . " years, ";
+    echo $age->m . " months, ";
+    echo $age->d . " days";
 }
