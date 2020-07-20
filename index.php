@@ -11,7 +11,7 @@
         <br><br><br><br>
         <h3>Enter Your Birth Date</h3>
 
-        <form method="post">
+        <form method="POST">
             <select name="day">
                 <?php
                     // pilih tanggal 
